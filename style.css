@@ -1,0 +1,674 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General Body Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: linear-gradient(135deg, #000000, #0ff);
+    /* Gradient background */
+    overflow-x: hidden;
+    /* Prevent horizontal scrolling */
+}
+
+/* Header Section */
+.header {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 50px 20px;
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+.header-content {
+    text-align: left;
+}
+
+.header-content h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.header-content p {
+    font-size: 20px;
+    margin-bottom: 20px;
+    animation: slideLeftp 1s ease forwards;
+    opacity: 0;
+}
+
+.btn1 {
+    padding: 10px 20px;
+    border: none;
+    background-color: #0ff;
+    color: #333;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0px 0px 15px #0ff;
+    transition: background-color 0.3s, transform 0.3s;
+    animation: slideUp 1s ease forwards;
+    animation-delay: 1s;
+    opacity: 0;
+
+}
+.nav ul {
+    font-weight: 500;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    padding: 0;
+    animation: navMenu 1s ease forwards;
+    animation-delay: calc(.1s * var(--i));
+}
+
+.nav ul li {
+    margin: 0 15px;
+
+}
+.nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s, transform 0.3s;
+    display: flex;
+    justify-content: center;
+    /* border-bottom: 2px solid #0ff; */
+}
+.nav ul li a:hover {
+    color: #0ff;
+    transform: scale(1.1);
+    border-bottom: 2px solid #0ff;
+}
+.navbar-toggler{
+    color: #0ff;
+    transform: scale(1.1);
+    border-bottom: 2px solid #0ff;
+}
+.heading1 {
+    color: #0ff;
+}
+.heading2{
+    font-size: 75px;
+    letter-spacing: 1px;
+    animation: slideRight 0.5s ease forwards;
+     animation-delay: 0.5s; 
+}
+i {
+    position: relative;
+    border: 2px solid #0ff;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 50%;
+    color: #0ff;
+    transition: 0.3ms;
+    animation: socielIcons 1s ease forwards;
+    animation-delay: calc(0.2s * var(--i));
+    opacity: 0;
+}
+
+i:hover {
+    box-shadow: 0 0 20px #0ff;
+}
+.part1{
+    animation: part1 1s ease forwards;
+    /* animation-delay: 1s; */
+    opacity: 0;
+}
+.part2{
+    animation: part2 1s ease forwards;
+    /* animation-delay: 1s; */
+    opacity: 0;
+}
+@keyframes navMenu {
+    0% {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+@keyframes part1 {
+    0% {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+@keyframes part2 {
+    0% {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+@keyframes heading2 {
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+@keyframes slideRight {
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+@keyframes slideLeftp {
+    0% {
+        transform: translateX(100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+@keyframes socielIcons {
+    0% {
+        transform: translateX(100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+@keyframes slideUp {
+    0% {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+/* Styling for the About Me Section */
+#about {
+    /* background-color: #1a1a1a;  */
+    color: #e0e0e0; /* Light gray text for readability */
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#about h2 {
+    font-size: 2.5rem;
+    font-family: 'Helvetica Neue', sans-serif;
+    color: #131313; /* Silver color for heading */
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+#about p {
+    font-size: 1.2rem;
+    font-family: 'Arial', sans-serif;
+    color: #d3d3d3; /* Slightly lighter gray for the paragraph text */
+    line-height: 1.8;
+    max-width: 800px; /* Keep paragraph centered and not too wide */
+    margin: 0 auto; /* Center the paragraph */
+    padding: 15px;
+    background-color: #2b2b2b; /* Darker background for the paragraph card */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Slight shadow for depth */
+    text-align: justify; /* Justified text for a neat layout */
+}
+
+/* Optional hover effect for paragraph */
+#about p:hover {
+    background-color: #333; /* Slight color change on hover */
+    transition: background-color 0.3s ease;
+}
+
+/* Animation for fade-in effect */
+.animate__animated.animate__fadeIn {
+    animation-duration: 1.5s;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    #about h2 {
+        font-size: 2rem;
+    }
+    
+    #about p {
+        font-size: 1rem;
+        padding: 10px;
+    }
+}
+
+/* Section Styling */
+.section {
+    padding: 40px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.8);
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Skills Section Styling */
+#skills {
+    background-color: #1a1a1a;
+    color: #e0e0e0;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+#skills h2 {
+    font-size: 2.5rem;
+    font-family: 'Helvetica Neue', sans-serif;
+    color: #c0c0c0;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Skills container */
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+/* Individual skill block styling */
+.skill {
+    font-family: 'Arial', sans-serif;
+    font-size: 1.2rem;
+    /* background-color: #2b2b2b; */
+    color: #d3d3d3;
+    padding: 20px;
+    border-radius: 10px;
+    width: 150px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    opacity: 0; /* Initially hidden for animation */
+    transform: translateY(30px); /* Start position for animation */
+}
+
+/* Icon styling */
+.skill i {
+    font-size: 2.5rem;
+    color: #c0c0c0; /* Silver color for icons */
+    margin-bottom: 10px;
+}
+
+/* Skill name styling */
+.skill p {
+    margin: 0;
+    font-size: 1rem;
+    color: #d3d3d3;
+}
+
+/* Hover effect */
+.skill:hover {
+    background-color: #333;
+    transform: translateY(-10px); /* Pop up effect on hover */
+}
+
+/* Animation for sequential skill appearance */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Applying sequential animation delay for each skill */
+.skill:nth-child(1) {
+    animation: fadeInUp 0.8s ease forwards;
+    animation-delay: 0.3s;
+}
+
+.skill:nth-child(2) {
+    animation: fadeInUp 0.8s ease forwards;
+    animation-delay: 0.6s;
+}
+
+.skill:nth-child(3) {
+    animation: fadeInUp 0.8s ease forwards;
+    animation-delay: 0.9s;
+}
+
+.skill:nth-child(4) {
+    animation: fadeInUp 0.8s ease forwards;
+    animation-delay: 1.2s;
+}
+
+.skill:nth-child(5) {
+    animation: fadeInUp 0.8s ease forwards;
+    animation-delay: 1.5s;
+}
+
+/* Responsive styling for smaller screens */
+@media (max-width: 768px) {
+    .skills-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .skill {
+        width: 100%;
+    }
+
+    #skills h2 {
+        font-size: 2rem;
+    }
+}
+/* Education Section Styling */
+#education {
+    background: linear-gradient(135deg, #000000, #0ff);
+    color: #1d1e1e; /* Neon blue text */
+    padding: 60px 20px;
+    text-align: center;
+}
+
+#education h2 {
+    font-size: 2.5rem;
+    font-family: 'Helvetica Neue', sans-serif;
+    color: #00ffff; /* Neon blue for the heading */
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Education container */
+.education-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+/* Education card styling */
+.education-card {
+    background-color: #1a1a1a;  
+    padding: 20px;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 600px;
+    box-shadow: 0 4px 8px rgba(0, 255, 255, 0.5); /* Neon blue shadow for depth */
+    text-align: left;
+    opacity: 0; /* Initially hidden for animation */
+    transform: translateY(30px); /* Start position for animation */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    position: relative; /* To handle image positioning */
+    overflow: hidden;
+}
+
+/* Image styling */
+.education-card img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    border-radius: 50%;
+    margin-right: 20px;
+    float: left; /* Float the image to the left */
+}
+
+/* Heading and paragraph in cards */
+.education-card h3 {
+    color: #00ffff; /* Neon blue */
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+}
+
+.education-card p {
+    color: #d3d3d3; /* Light gray for the paragraph */
+    font-size: 1.2rem;
+}
+
+/* Hover effect on education cards */
+.education-card:hover {
+    transform: translateY(-10px); /* Pop-up effect on hover */
+    box-shadow: 0 6px 12px rgba(0, 255, 255, 0.7); /* Stronger neon blue glow */
+}
+
+/* Animation for sequential appearance */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Applying sequential animation delay */
+.education-card:nth-child(1) {
+    animation: fadeInUp 0.8s ease forwards;
+    animation-delay: 0.4s;
+}
+
+.education-card:nth-child(2) {
+    animation: fadeInUp 0.8s ease forwards;
+    animation-delay: 0.8s;
+}
+
+/* Responsive styling for smaller screens */
+@media (max-width: 768px) {
+    .education-card {
+        max-width: 100%;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .education-card img {
+        float: none;
+        margin: 0 auto 20px auto;
+    }
+
+    #education h2 {
+        font-size: 2rem;
+    }
+}
+
+
+/* Contact Form */
+#contact-form {
+    max-width: 600px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#contact-form input,
+#contact-form textarea {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+#contact-form button {
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+#contact-form button:hover {
+    background-color: #555;
+    transform: scale(1.05);
+}
+
+/* Keyframes for Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* Projects Section Styling */
+#projects {
+    background-color: #0a0a0a; /* Black background */
+    color: #00ffff; /* Neon blue for text */
+    padding: 60px 20px;
+    text-align: center;
+}
+
+#projects h2 {
+    font-size: 2.5rem;
+    color: #00ffff; /* Neon blue for the heading */
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Projects container */
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+/* Individual project card */
+.project {
+    /* background: linear-gradient(135deg, #000000, #00ffff); */
+    padding: 20px;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 4px 8px rgba(0, 255, 255, 0.5); /* Neon blue shadow */
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Project title */
+.project h3 {
+    color: #00ffff; /* Neon blue for the project title */
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+/* Project description */
+.project p {
+    color: #d3d3d3; /* Light gray for description */
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+/* Project link button */
+.project-link {
+    display: inline-block;
+    background-color: #00ffff; /* Neon blue for button */
+    color: #0a0a0a; /* Black text */
+    padding: 10px 20px;
+    border-radius: 6px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Hover effect for the project link */
+.project-link:hover {
+    background-color: #0a0a0a; /* Inverse colors on hover */
+    color: #00ffff;
+    box-shadow: 0 6px 12px rgba(0, 255, 255, 0.7); /* Neon blue glow */
+}
+
+/* Hover effect on project cards */
+.project:hover {
+    transform: translateY(-10px); /* Pop up effect */
+    box-shadow: 0 6px 12px rgba(0, 255, 255, 0.7); /* Stronger glow on hover */
+}
+
+/* Responsive styling for smaller screens */
+@media (max-width: 768px) {
+    .project {
+        max-width: 100%;
+    }
+
+    #projects h2 {
+        font-size: 2rem;
+    }
+}
+
+
+
+/* Responsive layout adjustments */
+@media (max-width: 767.98px) {
+    .header {
+        text-align: center;
+    }
+
+    .header-content {
+        margin-bottom: 20px;
+    }
+
+    .header img {
+        margin: 0 auto;
+        display: block;
+    }
+}
+@media (min-width: 1000px) and (max-width: 1999px) {
+    .container {
+        width: 100%; 
+        justify-content: center;
+        align-content: center;
+    }
+    
+    .header-content {
+        text-align: center; 
+    }
+}
+@media (min-width: 250px) and (max-width: 450px) {
+    .container {
+        width: 100%; 
+        justify-content: center;
+        align-content: center;
+    }
+    
+    .header-content {
+        text-align: center; 
+    }
+}
